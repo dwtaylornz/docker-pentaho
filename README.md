@@ -25,60 +25,13 @@ docker logs -f pentaho
 
 Please see details below
 
-##Pull repository
-* Release: 5.0-TRUNK
-
-`sudo docker pull wmarinho/pentaho-biserver:5.0-TRUNK`
-
-* Release: 5.1.0.0
-
-`sudo docker pull wmarinho/pentaho-biserver:5.1.0.0`
-
-* Release: 5.1-TRUNK
-
-`sudo docker pull wmarinho/pentaho-biserver:5.1-TRUNK`
-
-More tags available [here](https://registry.hub.docker.com/u/wmarinho/pentaho/tags/manage/)
-
-* Listing images on the host
-
-`sudo docker images`
-
-
-
-`sudo docker run -p 8080:8080 -d wmarinho/pentaho-biserver:5.0-TRUNK`
-
-`sudo docker run -p 8081:8080 -d wmarinho/pentaho-biserver:5.1-TRUNK`
-
-
-* Make sure your container is running
-
-`$ sudo docker ps`
-
-
 * Accessing Pentaho
 
  [http://localhost:8080](http://localhost:8080)
 
- [http://localhost:8081](http://localhost:8081)
-
-
-* Stop containers
-
-`sudo docker stop <CONTAINER_ID>`
-
-* Start containers
-
-`sudo docker start <CONTAINER_ID>`
-
-
 * Running an interactive container
 
 `sudo docker run -i -t wmarinho/pentaho-biserver:5.1-TRUNK /bin/bash`
-
-
-
-
 
 * Now we can easily run multiples containers and versions of Pentaho using only one server
 
@@ -101,9 +54,3 @@ Or run in interactive mode
 sudo docker run -p 8080:8080 -i -t myimage/pentaho:mytag /bin/bash
 </pre>
 
-Please see [Dockerfile Reference] (https://docs.docker.com/reference/builder/) for additional information.
-
-
-##Docker Hub account
-
-You can create a docker account and push your images. Please see [Working with Docker Hub](https://docs.docker.com/userguide/dockerrepos/)
