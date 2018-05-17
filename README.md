@@ -21,14 +21,6 @@ docker run --name pentaho -d -p 8080:8080 -e PGHOST={postgres_hostname} wmarinho
 docker logs -f pentaho
 </pre>
 
-[http://localhost:8080](http://localhost:8080)
-
-Please see details below
-
-* Accessing Pentaho
-
- [http://localhost:8080](http://localhost:8080)
-
 * Running an interactive container
 
 `sudo docker run -i -t wmarinho/pentaho-biserver:5.1-TRUNK /bin/bash`
